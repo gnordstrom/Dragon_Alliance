@@ -35,42 +35,48 @@ class NavBar extends Component {
                 </div>
 
                 <div className="navbar-bottom">
-                    <div className="bottom-link small">
-                        <Link to="/products">
-                            <h5>PRODUCTS</h5>
-                        </Link>
+                    <div className="bottom-left">
+                        <div className="bottom-link small">
+                            <Link to="/products" className="link-title">
+                                <h5>PRODUCTS</h5>
+                            </Link>
+                        </div>
+                        <div className="bottom-link small">
+                            <Link to="/video" className="link-title">
+                                <h5>VIDEO</h5>
+                            </Link>
+                        </div>
+                        <div className="bottom-link small">
+                            <Link to="/team" className="link-title">
+                                <h5>TEAM</h5>
+                            </Link>
+                        </div>
+                        <div className="bottom-link big">
+                            <Link to="/cross-performance" className="link-title">
+                                <h5>CROSS PERFORMANCE (XP)</h5>
+                            </Link>
+                        </div>
+                        <div className="bottom-link medium">
+                            <Link to="/about-us" className="link-title">
+                                <h5>ABOUT US</h5>
+                            </Link>
+                        </div>
+                        <div className="bottom-link medium">
+                            <Link to="/store-locator" className="link-title">
+                                <h5>STORE LOCATOR</h5>
+                            </Link>
+                        </div>
+                        <div className="bottom-link medium">
+                            <Link to="/" className="link-title">
+                                <h5>CHOOSE REGION</h5>
+                            </Link>
+                        </div>
                     </div>
-                    <div className="bottom-link small">
-                        <Link to="/video">
-                            <h5>VIDEO</h5>
-                        </Link>
-                    </div>
-                    <div className="bottom-link small">
-                        <Link to="/team">
-                            <h5>TEAM</h5>
-                        </Link>
-                    </div>
-                    <div className="bottom-link big">
-                        <Link to="/cross-performance">
-                            <h5>CROSS PERFORMANCE (XP)</h5>
-                        </Link>
-                    </div>
-                    <div className="bottom-link small">
-                        <Link to="/about-us">
-                            <h5>ABOUT US</h5>
-                        </Link>
-                    </div>
-                    <div className="bottom-link">
-                        <Link to="/store-locator">
-                            <h5>STORE LOCATOR</h5>
-                        </Link>
-                    </div>
-                    <div className="bottom-link">
-                        <h5>CHOOSE REGION</h5>
-                    </div>
-                    <div className="bottom-input">
-                        <input className="input-box"type="text" placeholder="Enter your email address"/>
-                        <button className="input-button">JOIN DRAGON</button>
+                    <div className="bottom-right">
+                        <div className="bottom-input">
+                            <input className="input-box"type="text" placeholder="Enter your email address"/>
+                            <button className="input-button">JOIN DRAGON</button>
+                        </div>
                     </div>
                 </div>
             </div>

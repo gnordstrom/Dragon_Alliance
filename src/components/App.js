@@ -16,7 +16,9 @@ class App extends Component {
         {/*<LargeCarousel />
         <SlickCarousel />
         <HomeContent />*/}
-        { routes }
+        <div className="route-wrapper">
+          { routes }
+        </div>
         <Footer />
       </div>
     );
