@@ -4,18 +4,19 @@ import './App.css';
 
 import NavBar from './NavBar/NavBar';
 import Footer from './Footer/Footer';
-import LargeCarousel from './Home/LargeCarousel/LargeCarousel';
-import SlickCarousel from './Home/SlickCarousel/SlickCarousel';
-import HomeContent from './Home/HomeContent/HomeContent';
+
+
+import routes from '../routes.js';
 
 class App extends Component {
   render() {
     return (
       <div className="main-wrapper">
         <NavBar />
-        <LargeCarousel />
+        {/*<LargeCarousel />
         <SlickCarousel />
-        <HomeContent />
+        <HomeContent />*/}
+        { routes }
         <Footer />
       </div>
     );
