@@ -1,0 +1,32 @@
+.slick-container {
+    width: 925px;
+    height: 170px;
+    // overflow: hidden;
+    margin: 0 20px;
+    // margin-right: 40px;
+
+    .arrows {
+        // position: absolute;
+        // left: 0px;
+        // z-index: 2;
+        cursor: pointer;
+    }
+
+    .image-box {
+        // border: 1px solid red;
+        margin: 0 5px 0 0;
+        width: 340px !important;
+        height: 170px;
+
+        .image-box-img {
+            // height: 170px;
+            // width: 323px;
+            width: 100%;
+            // border: none;
+        }
+    }
+}
+
+.slick-arrow {
+    background-color: black;
+}
