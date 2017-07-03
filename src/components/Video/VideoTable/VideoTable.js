@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-
 // Components
 import VideoItem from './VideoItem/VideoItem';
-
-import img1 from './VideoItem/assets/video1.jpg';
-
 // Imported images for video cards
 import playButton from './assets/dragon-tv-play.png';
 import surf0 from './assets/surf/0.jpg'
@@ -20,7 +16,7 @@ import moto0 from './assets/moto/0.jpg'
 import optical0 from './assets/optical/0.jpg'
 import optical1 from './assets/optical/1.jpg'
 import optical2 from './assets/optical/2.jpg'
-
+// Stylesheet (use scss)
 import './VideoTable.css';
 
 class VideoTable extends Component {
@@ -52,115 +48,89 @@ class VideoTable extends Component {
         }
     }
     render() {
-        const {
-            surf, 
-            snow, 
-            moto, 
-            optical 
-        } = this.state;
+        const {surf, snow, moto, optical } = this.state;
         return (
             <div className="table-wrapper">
                 <div className="container">
                     <div className="column-a">
-                        <div className="column-header">
-                            SURF
-                        </div>
+                        <div className="column-header">SURF</div>
                         <VideoItem 
                             text="DRAGON'S H20 FLOATABLE COLLECTION"
                             image={surf0}
                             handleVideoChange={this.props.handleVideoChange}
-                            url={surf[0]}
-                        />
+                            url={surf[0]}/>
                         <VideoItem 
                             text="DETAIL COLLECTION - YOUTH DRIVEN STYLING"
                             image={surf1}
                             handleVideoChange={this.props.handleVideoChange}
-                            url={surf[1]}
-                        />
+                            url={surf[1]}/>
                         <VideoItem 
                             text="RISING STAR, GRIFFIN COLAPINTO"
                             image={surf2}
                             handleVideoChange={this.props.handleVideoChange}
-                            url={surf[2]}
-                        />
+                            url={surf[2]}/>
                         <VideoItem 
                             text="CLARK LITTLE SIGNATURE VANTAGE"
                             image={surf3}
                             handleVideoChange={this.props.handleVideoChange}
-                            url={surf[2]}
-                        />
+                            url={surf[2]}/>
                     </div>
 
                     <div className="column-b">
-                        <div className="column-header">
-                            SNOW
-                        </div>
+                        <div className="column-header">SNOW</div>
                         <VideoItem 
                             text="LUMALENS"
                             image={snow0}
                             handleVideoChange={this.props.handleVideoChange}
-                            url={snow[0]}
-                        />
+                            url={snow[0]}/>
                         <VideoItem 
                             text="DRAGON'S TRANSITION LENS"
                             image={snow1}
                             handleVideoChange={this.props.handleVideoChange}
-                            url={snow[1]}
-                        />
+                            url={snow[1]}/>
                         <VideoItem 
                             text="SWIFTLOCK LENS TECHNOLOGY"
                             image={snow2}
                             handleVideoChange={this.props.handleVideoChange}
-                            url={snow[2]}
-                        />
+                            url={snow[2]}/>
                         <VideoItem 
                             text="NEW NFX2 GOGGLE - SKI"
                             image={snow3}
                             handleVideoChange={this.props.handleVideoChange}
-                            url={snow[3]}
-                        />
+                            url={snow[3]}/>
                         <VideoItem 
                             text="NEW NFX2 GOGGLE - SNOWBOARD"
                             image={snow4}
                             handleVideoChange={this.props.handleVideoChange}
-                            url={snow[4]}
-                        />
+                            url={snow[4]}/>
                     </div>
 
                     <div className="column-c">
-                        <div className="column-header">
-                            MOTO
-                        </div>
+                        <div className="column-header">MOTO</div>
                         <VideoItem 
                             text="NFX2 MX GOGGLE SWIFTLOCK TECHNOLOGY"
                             image={moto0}
                             handleVideoChange={this.props.handleVideoChange}
-                            url={moto[0]}
-                        />
+                            url={moto[0]}/>
                     </div>
 
                     <div className="column-d">
-                        <div className="column-header">
-                            OPTICAL
-                        </div>
+                        <div className="column-header">OPTICAL</div>
                         <VideoItem 
                             text="THE DESTINY COLLECTION"
                             image={optical0}
                             handleVideoChange={this.props.handleVideoChange}
-                            url={optical[0]}
-                        />
+                            url={optical[0]}/>
                         <VideoItem 
                             text="EVAN GEISELMAN - FRAME OF MIND"
                             image={optical1}
                             handleVideoChange={this.props.handleVideoChange}
-                            url={optical[1]}
-                        />
+                            url={optical[1]}/>
                         <VideoItem 
                             text="CLARK LITTLE - FRAME OF MIND"
                             image={optical2}
                             handleVideoChange={this.props.handleVideoChange}
-                            url={optical[2]}
-                        />
+                            url={optical[2]}/>
                     </div>
                 </div>
             </div>
