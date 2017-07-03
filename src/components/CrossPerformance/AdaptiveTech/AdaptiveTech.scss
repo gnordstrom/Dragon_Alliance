@@ -47,60 +47,67 @@
         }
     }
 
-    .adaptive-content1 {
-        max-width: 1000px;
-        font-size: 1.1em;
-        line-height: 1.5em;
-        text-align: center;
-        letter-spacing: .05em;
-        margin: 80px auto 0;
 
-        .content1-header {
-            margin: 1.4em auto .8em;
-            font-size: 1.6em;
-        }
+    .adaptive-glasses {
+        border: 1px solid green;
+        // height: 600px;
+        width: 80%;
+        margin: 100px auto 0;
+        // padding: 0;
 
-        .content1-content {
-            font-size: 1em;
+        .glasses-row {
+            width: 86%;
+            margin: 100px auto 0;
+            padding: 0;
+            display: flex;
+
+            .glasses-item {
+                width: 436px;
+                height: 286px;
+                font-size: 1.2em;
+                // border: 1px solid black;
+
+                .item-image-wrapper {
+                    max-width: 95%;
+                    margin: 0 auto;
+
+                    .item-image-image {
+                        width: 100%;
+                    }
+                }
+
+                .item-content {
+                    width: 80%;
+                    margin: 0 auto;
+                    
+                    .item-content-content {
+
+                    }
+                    
+                    .item-content-logo-hydra {
+                        background: url("./assets/hydra_logo.svg") no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding-right: 1em;
+                        width: 128px;
+                        height: 86px;
+                    }
+
+                    .item-bottom-title {
+                        // text-align: right;
+                        padding-left: 90px;
+                        display: inline;
+                    }
+                }
+
+            }
+
+            .left {
+                margin-right:10px;
+            } 
         }
     }
 
-    .adaptive-content2 {
-        max-width: 1200px;
-        margin: 80px auto 0;
-        padding: 0;
-        // border: 1px solid red;
-        display: flex;
-
-        .content2-card {
-            width: 400px;
-            height: 237px;
-            // border: 1px solid blue;
-            
-            .card {
-                height: 125px;
-                background-position: center top;
-                background-size: auto 125px;
-            }
-            
-            .glacia {
-                // width: 125px;
-                background: url('./assets/glacia_logo.svg') no-repeat;
-                background-position: center;
-            }
-            .terra {
-                background: url('./assets/terra_logo.svg') no-repeat;
-                background-position: center;
-            }
-            .hydra {
-                background: url('./assets/hydra_logo.svg') no-repeat;
-                background-position: center;
-            }
-
-            .card-content {
-                margin-top: 1em;
-                text-align: center;
-            }
-        }
-    }
 }
