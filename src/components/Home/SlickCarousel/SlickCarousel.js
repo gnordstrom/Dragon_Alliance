@@ -20,10 +20,12 @@ class SlickCarousel extends Component {
             speed: 1000,
             autoplay: true,
             autoplaySpeed: 2000,
-            centerMode: true,
+            // centerMode: true,
             initialSlide: 1,
             slidesToShow: 3,
-            slidesToScroll: 1,
+            // slidesToScroll: 1,
+            arrows: false,
+            focusOnSelect: true
         };
         return (
             <Slider {...settings} className="slick-container">
