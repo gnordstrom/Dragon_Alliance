@@ -1,7 +1,7 @@
 .adaptive-wrapper {
     background-color: white;
     width: 100%;
-    height: 500px;
+    height: 1300px;
     margin: 180px auto 0px;
     color: #2b2b2b;
 
@@ -69,28 +69,38 @@
         max-width: 1200px;
         margin: 80px auto 0;
         padding: 0;
-        border: 1px solid red;
+        // border: 1px solid red;
         display: flex;
 
         .content2-card {
             width: 400px;
             height: 237px;
-            border: 1px solid blue;
+            // border: 1px solid blue;
             
-        }
-        
-        .glacia {
-            width: 100%;
-            background: url('./assets/glacia_logo.svg') no-repeat;
-            background-position: center;
-        }
-        .terra {
-            background: url('./assets/terra_logo.svg') no-repeat;
-            background-position: center;
-        }
-        .hydra {
-            background: url('./assets/hydra_logo.svg') no-repeat;
-            background-position: center;
+            .card {
+                height: 125px;
+                background-position: center top;
+                background-size: auto 125px;
+            }
+            
+            .glacia {
+                // width: 125px;
+                background: url('./assets/glacia_logo.svg') no-repeat;
+                background-position: center;
+            }
+            .terra {
+                background: url('./assets/terra_logo.svg') no-repeat;
+                background-position: center;
+            }
+            .hydra {
+                background: url('./assets/hydra_logo.svg') no-repeat;
+                background-position: center;
+            }
+
+            .card-content {
+                margin-top: 1em;
+                text-align: center;
+            }
         }
     }
 }
