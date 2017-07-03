@@ -58,14 +58,14 @@ export default (
             </div>
         )}/>
         <Route path="/about-us" render={() => (
-            <div>
+            <div className="route-wrapper">
                 <NavBar />
                 <AboutUs/> 
                 <Footer />
             </div>
         )} />
         <Route path="/store-locator" render={() => (
-            <div>
+            <div className="route-wrapper">
                 <NavBar />
                 <StoreLocator/> 
                 <Footer />

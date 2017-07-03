@@ -23,7 +23,7 @@ class Video extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="video-wrapper">
                 <VimeoPlayer src={this.state.currentVideo}/>
                 <VideoTable handleVideoChange={this.handleVideoChange} currentVideo={this.state.currentVideo}/>
             </div>
