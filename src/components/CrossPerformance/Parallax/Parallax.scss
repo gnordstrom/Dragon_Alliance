@@ -1,0 +1,22 @@
+.parallax-container {
+    background-image: url('../assets/intro-background.jpg');
+    height: 900px;
+    margin-top: -165px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .par-logo-wrapper {
+        width: 100%;
+        padding-top: 460px;
+    }
+
+    .xp-logo {
+        height: 115px;
+        background: url('../assets/xp_cross_performance_collection-white.svg') no-repeat;
+        background-position: center;
+        background-position-y: center;
+        background-size: contain;
+    }
+}

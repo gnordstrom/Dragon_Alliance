@@ -52,9 +52,6 @@ export default (
                 <div className="xp-wrapper">
                     <CrossPerformance newNav="true"/>
                 </div>
-                {/*<div>*/}
-                    {/*<Footer/>*/}
-                {/*</div>*/}
             </div>
         )}/>
         <Route path="/about-us" render={() => (
