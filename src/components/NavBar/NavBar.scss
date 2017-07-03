@@ -1,5 +1,14 @@
 $font-color: cornflowerblue;
 
+h5 {
+    display: block;
+	font-size: 0.83em;
+	-webkit-margin-before: 1.67em;
+	-webkit-margin-after: 1.67em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}
 .navbar {
     width: 100%;
     height: 110px;
@@ -45,22 +54,29 @@ $font-color: cornflowerblue;
         .bottom-left {
             display: flex;
             .bottom-link {
-                width: 110px;
+                width: 90px;
                 text-align: center;
                 color: black;
                 // border: 1px solid red;
 
                 .link-title {
-                    font-size: 13px;
+                    font-size: 11.5px;
                     font-family: Arial, Helvetica, sans-serif;
                     text-decoration: none;
                     color: #606162;
                     padding-right: 15px;  
+                    display: block;
+                    // font-size: 0.83em;
+                    -webkit-margin-before: 1.67em;
+                    -webkit-margin-after: 1.67em;
+                    -webkit-margin-start: 0px;
+                    -webkit-margin-end: 0px;
                     font-weight: bold;
                 }
             }
             .small {
                 width: 60px;
+                // height: 54.78px;
             }
             .medium {
                 width: 120px;
@@ -86,6 +102,7 @@ $font-color: cornflowerblue;
                     width: 100px;
                     height: 25px;
                     color: white;
+                    font: 11px system-ui;
                 }
             }
         }

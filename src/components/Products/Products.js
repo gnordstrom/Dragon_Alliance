@@ -7,7 +7,7 @@ class Products extends Component {
     render() {
         return (
             <div>
-                <img src={header} />
+                <img src={header} alt="Dragon"/>
                 Product Component
             </div>
         );

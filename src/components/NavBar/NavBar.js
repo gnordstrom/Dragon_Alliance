@@ -36,39 +36,39 @@ class NavBar extends Component {
 
                 <div className="navbar-bottom">
                     <div className="bottom-left">
-                        <div className="bottom-link small">
+                        <div className="bottom-link">
                             <Link to="/products" className="link-title">
-                                <h5>PRODUCTS</h5>
+                                PRODUCTS
                             </Link>
                         </div>
                         <div className="bottom-link small">
                             <Link to="/video" className="link-title">
-                                <h5>VIDEO</h5>
+                                VIDEO
                             </Link>
                         </div>
                         <div className="bottom-link small">
                             <Link to="/team" className="link-title">
-                                <h5>TEAM</h5>
+                                TEAM
                             </Link>
                         </div>
                         <div className="bottom-link big">
                             <Link to="/cross-performance" className="link-title">
-                                <h5>CROSS PERFORMANCE (XP)</h5>
+                                CROSS PERFORMANCE (XP)
                             </Link>
                         </div>
-                        <div className="bottom-link medium">
+                        <div className="bottom-link">
                             <Link to="/about-us" className="link-title">
-                                <h5>ABOUT US</h5>
+                                ABOUT US
                             </Link>
                         </div>
                         <div className="bottom-link medium">
                             <Link to="/store-locator" className="link-title">
-                                <h5>STORE LOCATOR</h5>
+                                STORE LOCATOR
                             </Link>
                         </div>
                         <div className="bottom-link medium">
                             <Link to="/" className="link-title">
-                                <h5>CHOOSE REGION</h5>
+                                CHOOSE REGION
                             </Link>
                         </div>
                     </div>

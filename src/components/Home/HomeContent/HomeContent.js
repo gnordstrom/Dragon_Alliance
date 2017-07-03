@@ -15,7 +15,7 @@ class HomeContent extends Component {
                 </div>
                 <div className="content-box">
                     <div className="content-box-header">Featured Video</div>
-                    <iframe className="content-iframe" src="//player.vimeo.com/video/217927548?byline=0&portrait=0&title=0" width="500" height="281" frameBorder="0" allowFullScreen></iframe>
+                    <iframe className="content-iframe" src="//player.vimeo.com/video/217927548?byline=0&portrait=0&title=0" title="vimeo" width="500" height="281" frameBorder="0" allowFullScreen></iframe>
                 </div>
 
                 <div className="content-box">

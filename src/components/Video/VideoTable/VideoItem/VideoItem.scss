@@ -1,0 +1,36 @@
+@import '../../../../styles/globalVariables.css';
+
+.box {
+    width: 200px;
+    height: 174px;
+    border: 1px solid red;
+    color: white;
+    font-size: 13px;
+
+    background-color: black;
+    margin: 10px;
+    overflow: hidden;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+
+    .box-img {
+        width: 200px;
+        height: auto;
+        border: none;
+    }
+    .play-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .play {
+            height: 15px;
+            width: 15px;
+            margin-top: 5px;
+        }
+    }
+    .box-text {
+        font-family: $cool-font;
+        font-size: 14px;
+    }
+}
