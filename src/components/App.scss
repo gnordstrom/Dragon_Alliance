@@ -1,10 +1,15 @@
 @import '../styles/globalVariables.css';
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 .main-wrapper {
   width: 974px;
   height: 117vh;
   margin: 0 auto;
-  // border: 1px solid black;
 
   .route-wrapper {
     margin-top: 40px;

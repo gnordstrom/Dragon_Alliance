@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+// Imported logo image
 import logo from '../../assets/Navbar/dragon-logo.svg';
+// Stylesheet - use scss
 import './NavBar.css';
 
 class NavBar extends Component {
@@ -37,39 +38,25 @@ class NavBar extends Component {
                 <div className="navbar-bottom">
                     <div className="bottom-left">
                         <div className="bottom-link">
-                            <Link to="/products" className="link-title">
-                                PRODUCTS
-                            </Link>
+                            <Link to="/products" className="link-title">PRODUCTS</Link>
                         </div>
                         <div className="bottom-link small">
-                            <Link to="/video" className="link-title">
-                                VIDEO
-                            </Link>
+                            <Link to="/video" className="link-title">VIDEO</Link>
                         </div>
                         <div className="bottom-link small">
-                            <Link to="/team" className="link-title">
-                                TEAM
-                            </Link>
+                            <Link to="/team" className="link-title">TEAM</Link>
                         </div>
                         <div className="bottom-link big">
-                            <Link to="/cross-performance" className="link-title">
-                                CROSS PERFORMANCE (XP)
-                            </Link>
+                            <Link to="/cross-performance" className="link-title">CROSS PERFORMANCE (XP)</Link>
                         </div>
                         <div className="bottom-link">
-                            <Link to="/about-us" className="link-title">
-                                ABOUT US
-                            </Link>
+                            <Link to="/about-us" className="link-title">ABOUT US</Link>
                         </div>
                         <div className="bottom-link medium">
-                            <Link to="/store-locator" className="link-title">
-                                STORE LOCATOR
-                            </Link>
+                            <Link to="/store-locator" className="link-title">STORE LOCATOR</Link>
                         </div>
                         <div className="bottom-link medium">
-                            <Link to="/" className="link-title">
-                                CHOOSE REGION
-                            </Link>
+                            <Link to="/" className="link-title">CHOOSE REGION</Link>
                         </div>
                     </div>
                     <div className="bottom-right">

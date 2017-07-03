@@ -12,7 +12,10 @@ import StoreLocator from './components/StoreLocator/StoreLocator';
 export default (
     <Switch>
         <Route path="/" exact component={ Home }/>
-        <Route path="/cross-performance" component={ CrossPerformance }/>
+        <Route path="/cross-performance"  render={ (props) => (
+            <CrossPerformance newNav="true"/>
+        )}/>
+            
         <Route path="/team" component={ Team }/>
         <Route path="/video" component={ Video }/>
         <Route path="/products" component={ Products }/>

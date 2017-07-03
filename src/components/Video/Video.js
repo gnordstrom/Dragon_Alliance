@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-
+// Components
 import VideoTable from './VideoTable/VideoTable';
 import VimeoPlayer from './VimeoPlayer/VimeoPlayer';
-
+// Stylesheet - use scss
 import './Video.css';
 
 class Video extends Component {
@@ -15,8 +15,7 @@ class Video extends Component {
 
         this.handleVideoChange = this.handleVideoChange.bind(this);
     }
-
-// https://player.vimeo.com/video/156900260
+    // Updates state with selected video, sends to VimeoPlayer
     handleVideoChange(term) {
         this.setState({
             currentVideo: term

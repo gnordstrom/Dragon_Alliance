@@ -8,10 +8,10 @@ import './VideoItem.css';
 const VideoItem = props => {
     const url = props.url;
     return (
-        <div className="box">
+        <div className="box" onClick={() => props.handleVideoChange(url)}>
             <img className="box-img" src={props.image} alt="Dragon"/>
             <div className="play-container">
-                <img className="play" alt="Dragon" src={playButton} onClick={() => props.handleVideoChange(url)}/>
+                <img className="play" alt="Dragon" src={playButton}/>
             </div>
             <span className="box-text">{props.text}</span>
         </div>
