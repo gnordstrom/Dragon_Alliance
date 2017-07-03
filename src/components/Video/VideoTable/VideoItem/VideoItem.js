@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import playButton from '../assets/dragon-tv-play.png';
+
 import './VideoItem.css';
 
 const VideoItem = props => {
@@ -9,7 +11,7 @@ const VideoItem = props => {
         <div className="box">
             <img className="box-img" src={props.image} alt="Dragon"/>
             <div className="play-container">
-                <img className="play" alt="Dragon" src={props.playButton} onClick={() => props.handleVideoChange(url)}/>
+                <img className="play" alt="Dragon" src={playButton} onClick={() => props.handleVideoChange(url)}/>
             </div>
             <span className="box-text">{props.text}</span>
         </div>
@@ -19,7 +21,6 @@ const VideoItem = props => {
 VideoItem.propTypes = {
     url: PropTypes.string,
     image: PropTypes.string,
-    playButton: PropTypes.string,
     text: PropTypes.string,
 };
 

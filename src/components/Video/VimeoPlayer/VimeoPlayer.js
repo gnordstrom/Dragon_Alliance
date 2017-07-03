@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const VimeoPlayer = (props) => {
     return (
@@ -12,5 +13,13 @@ const VimeoPlayer = (props) => {
         </iframe>
     );
 };
+
+VimeoPlayer.defaultProps = {
+    src: 'https://player.vimeo.com/video/191883987'
+}
+
+VimeoPlayer.PropTypes = {
+    src: PropTypes.string
+}
 
 export default VimeoPlayer;

@@ -3,7 +3,6 @@
 .box {
     width: 200px;
     height: 174px;
-    border: 1px solid red;
     color: white;
     font-size: 13px;
 
@@ -30,7 +29,7 @@
         }
     }
     .box-text {
-        font-family: $cool-font;
+        // font-family: $cool-font;
         font-size: 14px;
     }
 }
