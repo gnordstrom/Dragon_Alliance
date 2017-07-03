@@ -16,7 +16,7 @@ import moto0 from './assets/moto/0.jpg'
 import optical0 from './assets/optical/0.jpg'
 import optical1 from './assets/optical/1.jpg'
 import optical2 from './assets/optical/2.jpg'
-// Stylesheet (use scss)
+// Stylesheet - use scss
 import './VideoTable.css';
 
 class VideoTable extends Component {

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+// Import button image
 import playButton from '../assets/dragon-tv-play.png';
-
+// Stylesheet - use scss
 import './VideoItem.css';
 
 const VideoItem = props => {
