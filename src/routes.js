@@ -1,6 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
+import NavBar from './components/Shared/NavBar/NavBar';
+import XPNavigation from './components/Shared/XPNavigation/XPNavigation';
+
+import Footer from './components/Shared/Footer/Footer';
 import Home from './components/Home/Home';
 import CrossPerformance from './components/CrossPerformance/CrossPerformance';
 import Team from './components/Team/Team';
@@ -11,15 +15,61 @@ import StoreLocator from './components/StoreLocator/StoreLocator';
 
 export default (
     <Switch>
-        <Route path="/" exact component={ Home }/>
-        <Route path="/cross-performance"  render={ (props) => (
-            <CrossPerformance newNav="true"/>
-        )}/>
+        <Route path="/" exact render={() => (
+            <div class="route-wrapper">
+                <NavBar />
+                <Home/> 
+                <Footer />
+            </div>
+        )} />
             
-        <Route path="/team" component={ Team }/>
-        <Route path="/video" component={ Video }/>
-        <Route path="/products" component={ Products }/>
-        <Route path="/about-us" component={ AboutUs }/>
-        <Route path="/store-locator" component={ StoreLocator }/>
+        <Route path="/products" render={() => (
+            <div className="route-wrapper">
+                <NavBar />
+                <Products/> 
+                <Footer />
+            </div>
+        )} />
+        <Route path="/video" render={() => (
+            <div className="route-wrapper">
+                <NavBar />
+                <Video/> 
+                <Footer />
+            </div>
+        )} />
+        <Route path="/team" render={() => (
+            <div className="route-wrapper">
+                <NavBar />
+                <Team/> 
+                <Footer />
+            </div>
+        )} />
+        <Route path="/cross-performance"  render={ (props) => (
+            <div> 
+                <div className="nav-wrapper">
+                    <XPNavigation />
+                </div>
+                <div className="xp-wrapper">
+                    <CrossPerformance newNav="true"/>
+                </div>
+                {/*<div>*/}
+                    {/*<Footer/>*/}
+                {/*</div>*/}
+            </div>
+        )}/>
+        <Route path="/about-us" render={() => (
+            <div>
+                <NavBar />
+                <AboutUs/> 
+                <Footer />
+            </div>
+        )} />
+        <Route path="/store-locator" render={() => (
+            <div>
+                <NavBar />
+                <StoreLocator/> 
+                <Footer />
+            </div>
+        )} />
     </Switch>
 )

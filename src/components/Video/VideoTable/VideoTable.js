@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 // Components
 import VideoItem from './VideoItem/VideoItem';
 // Imported images for video cards
-import playButton from './assets/dragon-tv-play.png';
 import surf0 from './assets/surf/0.jpg'
 import surf1 from './assets/surf/1.jpg'
 import surf2 from './assets/surf/2.jpg'

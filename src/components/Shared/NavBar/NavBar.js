@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 // Imported logo image
-import logo from '../../assets/Navbar/dragon-logo.svg';
+import logo from './assets/dragon-logo.svg';
 // Stylesheet - use scss
 import './NavBar.css';
 

@@ -7,11 +7,21 @@ body {
 }
 
 .main-wrapper {
-  width: 974px;
-  height: 117vh;
-  margin: 0 auto;
 
   .route-wrapper {
     margin-top: 40px;
+    width: 974px; 
+    height: 117vh;
+    margin: 0 auto;
+  }
+
+  .nav-wrapper {
+    width: 974px;
+    margin: 0 auto;
+  }
+  .xp-wrapper {
+    margin-top: 40px;
+    height: 117vh;
+ 
   }
 }
