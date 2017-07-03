@@ -2,4 +2,95 @@
     background-color: white;
     width: 100%;
     height: 500px;
+    margin: 180px auto 0px;
+    color: #2b2b2b;
+
+    .adaptive-logo {
+        background: url('./assets/adaptive_technology.svg') no-repeat;
+        height: 100px;
+        background-position: center;
+        background-size: contain;
+        margin: 80px auto 0;
+    }
+
+    .adaptive-categories {
+        margin: 2em auto 0 !important;
+
+        .categories-wrapper {
+            width: 550px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            
+            .category {
+                display: block;
+                height: 100px;
+                background-position: center;
+                background-size: auto 90px;
+            }
+
+            .glacia {
+                background: url('./assets/glacia_logo.svg') no-repeat;
+                background-position: center;
+            }
+            .terra {
+                background: url('./assets/terra_logo.svg') no-repeat;
+                background-position: center;
+            }
+            .hydra {
+                background: url('./assets/hydra_logo.svg') no-repeat;
+                background-position: center;
+            }
+            .third {
+                width: 33.3%;
+            }
+        }
+    }
+
+    .adaptive-content1 {
+        max-width: 1000px;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        text-align: center;
+        letter-spacing: .05em;
+        margin: 80px auto 0;
+
+        .content1-header {
+            margin: 1.4em auto .8em;
+            font-size: 1.6em;
+        }
+
+        .content1-content {
+            font-size: 1em;
+        }
+    }
+
+    .adaptive-content2 {
+        max-width: 1200px;
+        margin: 80px auto 0;
+        padding: 0;
+        border: 1px solid red;
+        display: flex;
+
+        .content2-card {
+            width: 400px;
+            height: 237px;
+            border: 1px solid blue;
+            
+        }
+        
+        .glacia {
+            width: 100%;
+            background: url('./assets/glacia_logo.svg') no-repeat;
+            background-position: center;
+        }
+        .terra {
+            background: url('./assets/terra_logo.svg') no-repeat;
+            background-position: center;
+        }
+        .hydra {
+            background: url('./assets/hydra_logo.svg') no-repeat;
+            background-position: center;
+        }
+    }
 }
