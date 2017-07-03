@@ -36,8 +36,7 @@ class CrossPerformance extends Component {
                 </div>
 
                 <AdaptiveTech />
-
-
+                
                 <Footer />
             </div>
         );
