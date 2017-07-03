@@ -1,7 +1,7 @@
 .adaptive-wrapper {
     background-color: white;
     width: 100%;
-    height: 1300px;
+    height: 1700px;
     margin: 180px auto 0px;
     color: #2b2b2b;
 
@@ -49,7 +49,7 @@
 
 
     .adaptive-glasses {
-        border: 1px solid green;
+        // border: 1px solid green;
         // height: 600px;
         width: 80%;
         margin: 100px auto 0;
@@ -57,7 +57,7 @@
 
         .glasses-row {
             width: 86%;
-            margin: 100px auto 0;
+            margin: 100px auto 60px;
             padding: 0;
             display: flex;
 
@@ -86,6 +86,26 @@
                     
                     .item-content-logo-hydra {
                         background: url("./assets/hydra_logo.svg") no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding-right: 1em;
+                        width: 128px;
+                        height: 86px;
+                    }
+                    .item-content-logo-terra {
+                        background: url("./assets/terra_logo.svg") no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding-right: 1em;
+                        width: 128px;
+                        height: 86px;
+                    }
+                    .item-content-logo-glacia {
+                        background: url("./assets/glacia_logo.svg") no-repeat;
                         background-size: contain;
                         background-position: center;
                         display: inline-block;
