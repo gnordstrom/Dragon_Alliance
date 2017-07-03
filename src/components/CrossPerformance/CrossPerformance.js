@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import bg from './assets/intro-background.jpg';
-import xpLogo from './assets/xp_cross_performance_collection-white.svg';
-import XPNavigation from '../Shared/XPNavigation/XPNavigation';
+// import xpLogo from './assets/xp_cross_performance_collection-white.svg';
+// import XPNavigation from '../Shared/XPNavigation/XPNavigation';
 import Footer from '../Shared/Footer/Footer';
 
 import './CrossPerformance.css';
@@ -39,7 +39,7 @@ class CrossPerformance extends Component {
                 </div>
 
                 <div className="video-container">
-                    <iframe className="vim-player" src="https://player.vimeo.com/video/131584887" frameBorder="0" allowFullScreen></iframe>
+                    <iframe title="Dragon" className="vim-player" src="https://player.vimeo.com/video/131584887" frameBorder="0" allowFullScreen></iframe>
                 </div>
                 <Footer />
             </div>

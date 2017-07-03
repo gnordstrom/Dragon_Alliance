@@ -16,7 +16,7 @@ import StoreLocator from './components/StoreLocator/StoreLocator';
 export default (
     <Switch>
         <Route path="/" exact render={() => (
-            <div class="route-wrapper">
+            <div className="route-wrapper">
                 <NavBar />
                 <Home/> 
                 <Footer />

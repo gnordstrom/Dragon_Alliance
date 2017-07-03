@@ -14,12 +14,14 @@ const VimeoPlayer = (props) => {
     );
 };
 
-VimeoPlayer.defaultProps = {
-    src: 'https://player.vimeo.com/video/191883987'
-}
+// Purpose of defaultProps unnecessary with use of isRequired in propTypes
 
-VimeoPlayer.PropTypes = {
-    src: PropTypes.string
+// VimeoPlayer.defaultProps = {
+//     src: 'https://player.vimeo.com/video/191883987'
+// }
+
+VimeoPlayer.propTypes = {
+    src: PropTypes.string.isRequired
 }
 
 export default VimeoPlayer;
