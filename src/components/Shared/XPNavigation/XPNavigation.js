@@ -9,8 +9,8 @@ import './XPNavigation.css';
 class XPNavigation extends Component {
     render() {
         return (
-            <div className="navbar xp">
-                <div className="navbar-top">
+            <div className="navbar">
+                <div className="navbar-top xp">
                     <div className="logo">
                         <Link to="/">
                             <img src={logo} alt="Dragon Alliance Logo"/>
