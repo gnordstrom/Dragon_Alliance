@@ -4,6 +4,10 @@ import header from './assets/slim_fom_mick.jpg';
 import './Products.css';
 
 class Products extends Component {
+
+    componentDidMount() {
+        
+    }
     render() {
         return (
             <div>

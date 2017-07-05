@@ -1,0 +1,39 @@
+{
+    "sunglasses": [
+        {
+            "id": 1,
+            "name": "Proflect",
+            "description": "Casually straddling the line between fashion and function, the Proflect is a confident, go-anywhere frame that exemplifies the evolution of Dragon DNA. Delivering standout style from the beach to the city streets, this round, dual lens frame features a distinctive chrome metal brow bar and a keyhole nose bridge with integrated soft, rubber nose pads. Sculpted, concave temple arms feature metal logo details and soft rubber inserts for exceptional fit and all-day comfort.",
+            "specs": [
+                "Lightweight Injected TR90 Frame", 
+                "6 Base Polycarbonate Lens",
+                "Available with Ion Mirrored Lenses",
+                "5 Barrel Stainless Steel Hinge",
+                "100% UV Protection",
+                "Medium Fit"
+            ],
+            "styles": [
+                {
+                    "id": 1,
+                    "color": "MATTE BLUE CHALK / SMOKE",
+                    "imageUrl": "http://dragon.com.s3.amazonaws.com/ey/1000/SP17/proflect_matte_blue_chalk_smoke_3_4.jpg",
+                    "price": "$140"
+                },
+                {
+                    "id": 2,
+                    "color": "MATTE BLACK / GREY PERFORMANCE POLARIZED",
+                    "imageUrl": "http://dragon.com.s3.amazonaws.com/ey/1000/SP17/proflect_matte_black_grey_p2_3_4.jpg",
+                    "price": "$190"
+                },
+                {
+                    "id": 3,
+                    "color": "MATTE BLACK / SKY BLUE ION",
+                    "imageUrl": "http://dragon.com.s3.amazonaws.com/ey/1000/SP17/proflect_matte_black_sky_blueionized_3_4.jpg",
+                    "price": "$150"
+                }
+            ]
+        }
+
+
+    ]
+}
