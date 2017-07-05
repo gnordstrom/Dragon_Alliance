@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import glasses1 from './assets/glasses1.jpg';
 import glasses2 from './assets/glasses2.jpg';
@@ -15,7 +15,7 @@ const GlassesTable = props => {
                 <div className="glasses-item">
                     <div className="glasses-item-wrapper">
                         <div className="item-image-wrapper">
-                            <img src={glasses1} className="item-image-image"/>
+                            <img src={glasses1} className="item-image-image" alt="Hydra"/>
                         </div>
                         <div className="item-content">
                             <span className="item-content-logo-hydra"></span>
@@ -28,7 +28,7 @@ const GlassesTable = props => {
                 <div className="glasses-item">
                     <div className="glasses-item-wrapper">
                         <div className="item-image-wrapper">
-                            <img src={glasses2} className="item-image-image"/>
+                            <img src={glasses2} className="item-image-image" alt="Hydra"/>
                         </div>
                         <div className="item-content">
                             <span className="item-content-logo-hydra"></span>
@@ -46,7 +46,7 @@ const GlassesTable = props => {
                 <div className="glasses-item">
                     <div className="glasses-item-wrapper">
                         <div className="item-image-wrapper">
-                            <img src={glasses3} className="item-image-image"/>
+                            <img src={glasses3} className="item-image-image" alt="Terra"/>
                         </div>
                         <div className="item-content">
                             <span className="item-content-logo-terra"></span>
@@ -59,7 +59,7 @@ const GlassesTable = props => {
                 <div className="glasses-item">
                     <div className="glasses-item-wrapper">
                         <div className="item-image-wrapper">
-                            <img src={glasses4} className="item-image-image"/>
+                            <img src={glasses4} className="item-image-image" alt="Glacia"/>
                         </div>
                         <div className="item-content">
                             <span className="item-content-logo-glacia"></span>
@@ -74,8 +74,8 @@ const GlassesTable = props => {
     );
 };
 
-GlassesTable.propTypes = {
+// GlassesTable.propTypes = {
     
-};
+// };
 
 export default GlassesTable;

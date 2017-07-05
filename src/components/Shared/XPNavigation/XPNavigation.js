@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './assets/dragon-logo.svg';
 // import bg from './assets/intro-background.jpg';
-import NavBar from '../NavBar/NavBar';
+// import NavBar from '../NavBar/NavBar';
 
 import './XPNavigation.css';
 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 import ContentOne from './ContentOne/ContentOne';
 import ContentTwo from './ContentTwo/ContentTwo';
@@ -30,9 +29,5 @@ class AdaptiveTech extends Component {
         );
     }
 }
-
-AdaptiveTech.propTypes = {
-
-};
 
 export default AdaptiveTech;
