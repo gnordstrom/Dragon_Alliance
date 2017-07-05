@@ -5,11 +5,6 @@ import ContentOne from './ContentOne/ContentOne';
 import ContentTwo from './ContentTwo/ContentTwo';
 import GlassesTable from './GlassesTable/GlassesTable';
 
-import glasses1 from './GlassesTable/assets/glasses1.jpg';
-import glasses2 from './GlassesTable/assets/glasses2.jpg';
-import glasses3 from './GlassesTable/assets/glasses3.jpg';
-import glasses4 from './GlassesTable/assets/glasses4.jpg';
-
 import './AdaptiveTech.css';
 
 class AdaptiveTech extends Component {

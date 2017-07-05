@@ -7,7 +7,7 @@ class Team extends Component {
     render() {
         return (
             <div>
-                <img src={team}/>
+                <img src={team} alt="Dragon's Team"/>
                 Team Component
             </div>
         );
