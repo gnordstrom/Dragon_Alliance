@@ -1,0 +1,36 @@
+.team-container {
+    min-height: 300px;
+    border: none;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 12px;
+
+    .team-card {
+        color: -webkit-link;
+	    cursor: auto;
+        width: 120px;
+        height: 140px;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+
+        .team-card-img {
+            width: 110px;
+            height: 110px;
+            display: block;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .team-card-title {
+            color: #000;
+            font-weight: bold;
+            margin-top: 10px;
+            text-transform: uppercase;
+            display: block;
+            text-align: center;
+            font-size: 11px;
+        }
+    }
+}
