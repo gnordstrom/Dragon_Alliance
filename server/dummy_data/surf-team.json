@@ -1,5 +1,5 @@
 {
-    "surf": [
+    "surfTeam": [
         {
             "id": 1,
             "name": "Rob Machado",
@@ -84,6 +84,6 @@
                 "http://s3.amazonaws.com/dragon.com/kitgui/ddb3cff780fb457b92e4de035aad43e7/files/Alejo2.jpg",
                 "http://s3.amazonaws.com/dragon.com/kitgui/ddb3cff780fb457b92e4de035aad43e7/files/Alejo1.jpg"
             ]
-        },
+        }
     ]
 }

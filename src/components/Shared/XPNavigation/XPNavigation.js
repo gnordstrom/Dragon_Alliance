@@ -45,7 +45,7 @@ class XPNavigation extends Component {
                             <Link to="/video" className="link-title">VIDEO</Link>
                         </div>
                         <div className="bottom-link small">
-                            <Link to="/team" className="link-title">TEAM</Link>
+                            <Link to="/team/surf" className="link-title">TEAM</Link>
                         </div>
                         <div className="bottom-link big">
                             <Link to="/cross-performance" className="link-title">CROSS PERFORMANCE (XP)</Link>

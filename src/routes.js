@@ -7,7 +7,15 @@ import XPNavigation from './components/Shared/XPNavigation/XPNavigation';
 import Footer from './components/Shared/Footer/Footer';
 import Home from './components/Home/Home';
 import CrossPerformance from './components/CrossPerformance/CrossPerformance';
+
 import Team from './components/Team/Team';
+import FreeSkiTeam from './components/Team/FreeSkiTeam/FreeSkiTeam';
+import LifestyleTeam from './components/Team/LifestyleTeam/LifestyleTeam';
+import MotoTeam from './components/Team/MotoTeam/MotoTeam';
+import SurfTeam from './components/Team/SurfTeam/SurfTeam';
+import SnowTeam from './components/Team/SnowTeam/SnowTeam';
+import WakeTeam from './components/Team/WakeTeam/WakeTeam';
+
 import Video from './components/Video/Video';
 import Products from './components/Products/Products';
 import AboutUs from './components/AboutUs/AboutUs';
@@ -37,13 +45,59 @@ export default (
                 <Footer />
             </div>
         )} />
-        <Route path="/team" render={() => (
-            <div className="route-wrapper">
-                <NavBar />
-                <Team/> 
-                <Footer />
-            </div>
-        )} />
+
+        {/* Team Views*/}
+        
+            <Route path="/team/free-ski" render={() => (
+                <div className="route-wrapper">
+                    <NavBar />
+                    <Team/>
+                    <FreeSkiTeam />
+                    <Footer />
+                </div>
+            )} />
+            <Route path="/team/lifestyle" render={() => (
+                <div className="route-wrapper">
+                    <NavBar />
+                    <Team/>
+                    <LifestyleTeam />
+                    <Footer />
+                </div>
+            )} />
+            <Route path="/team/moto" render={() => (
+                <div className="route-wrapper">
+                    <NavBar />
+                    <Team/>
+                    <MotoTeam />
+                    <Footer />
+                </div>
+            )} />
+            <Route path="/team/surf" render={() => (
+                <div className="route-wrapper">
+                    <NavBar />
+                    <Team/> 
+                    <SurfTeam />
+                    <Footer />
+                </div>
+            )} />
+            <Route path="/team/snow" render={() => (
+                <div className="route-wrapper">
+                    <NavBar />
+                    <Team/>
+                    <SnowTeam />
+                    <Footer />
+                </div>
+            )} />
+            <Route path="/team/wake" render={() => (
+                <div className="route-wrapper">
+                    <NavBar />
+                    <Team/>
+                    <WakeTeam />
+                    <Footer />
+                </div>
+            )} />
+
+
         <Route path="/cross-performance"  render={ (props) => (
             <div> 
                 <div className="nav-wrapper">
