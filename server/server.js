@@ -1,24 +1,35 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-
-const app = express();
+const massive = require('massive');
 const config = require('./config.js');
+const controller = require('./controller.js');
 const port = config.port;
+const connectionString = config.herokuConnect;
 
-const sunglasses = require('./dummy_data/sunglasses.json');
-const surfTeam = require('./dummy_data/surf-team.json');
+// Express
+const app = module.exports = express();
 
 
+// Middleware
 app.use(bodyParser.json());
-app.use(cors());
+let corsOptions = {
+    origin: `http://localhost:${port}`
+}
+app.use(cors(corsOptions));
 
-app.get('/api/getSunglasses', (req, res, next) => {
-    res.status(200).send(sunglasses)
-});
+// Massive Database
+massive(connectionString).then( dbInstance => {
+    app.set('db', dbInstance);
+    // set schema file on server initiation
+    dbInstance.set_schema()
+        .then( () => console.log('Tables successfully reset'))
+        .catch( () => console.log('Try again'))
+})    
 
-app.get('/api/getSurfTeam', (req, res, next) => {
-    res.status(200).send(surfTeam)
-})
+// Endpoints
+app.get('/api/dbSurfers', controller.getSurfers)
+
+
 
 app.listen(port, () => console.log(`Server is now live on port ${port}`));
