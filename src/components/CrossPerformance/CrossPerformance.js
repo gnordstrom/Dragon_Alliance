@@ -7,6 +7,9 @@ import bg from './assets/intro-background.jpg';
 import Parallax from './Parallax/Parallax';
 import MadeForThis from './MadeForThis/MadeForThis';
 import AdaptiveTech from './AdaptiveTech/AdaptiveTech';
+import PerformanceTech from './PerformanceTech/PerformanceTech';
+import CasesXP from './CasesXP/CasesXP';
+import ShopButton from './ShopButton/ShopButton';
 import Footer from '../Shared/Footer/Footer';
 
 import './CrossPerformance.css';
@@ -37,6 +40,10 @@ class CrossPerformance extends Component {
 
                 <AdaptiveTech />
                 
+                <PerformanceTech />
+                <CasesXP />
+
+                <ShopButton />
                 <Footer />
             </div>
         );

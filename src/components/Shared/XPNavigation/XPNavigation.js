@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './assets/dragon-logo.svg';
 // import bg from './assets/intro-background.jpg';
-import NavBar from '../NavBar/NavBar';
+// import NavBar from '../NavBar/NavBar';
 
 import './XPNavigation.css';
 
 class XPNavigation extends Component {
     render() {
         return (
-            <div className="navbar xp">
-                <div className="navbar-top">
+            <div className="navbar">
+                <div className="navbar-top xp">
                     <div className="logo">
                         <Link to="/">
                             <img src={logo} alt="Dragon Alliance Logo"/>
@@ -45,7 +45,7 @@ class XPNavigation extends Component {
                             <Link to="/video" className="link-title">VIDEO</Link>
                         </div>
                         <div className="bottom-link small">
-                            <Link to="/team" className="link-title">TEAM</Link>
+                            <Link to="/team/surf" className="link-title">TEAM</Link>
                         </div>
                         <div className="bottom-link big">
                             <Link to="/cross-performance" className="link-title">CROSS PERFORMANCE (XP)</Link>

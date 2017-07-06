@@ -1,0 +1,26 @@
+.predator-container {
+    margin: 100px 0;
+    padding: 100px 0;
+    color: rgb(199,198,197);
+    background-color: black;
+
+    .predator-wrapper {
+        display: flex;
+        justify-content: center;
+
+        .predator-logo {
+            height: 100px;
+            max-width: 1000px;
+        }
+    }
+    .predator-content {
+        margin: 2em auto 0;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        letter-spacing: .05em;
+        width: 80%;
+        max-width: 1000px;
+        padding: 0;
+        text-align: center;
+    }
+}

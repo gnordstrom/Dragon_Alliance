@@ -1,0 +1,49 @@
+{
+    "goggles": [
+        {
+            "id": 1,
+            "name": "X2",
+            "description": "This game-changing goggle pushes functional versatility to the next dimension. The X2 combines the proven performance of our patented Frameless Lens Technology with SwiftLock, an easy on-and-off mechanism that makes swapping lenses faster, easier, and more secure than ever. The X2 is our most advanced goggle yet; enabling riders to adapt instantly in all kinds of conditions.",
+            "specs": [
+                "Swiftlock Lens Change System",
+                "Armored Frame Ventilation",
+                "Injection Molded Polycarbonate Lens",
+                "Super Anti Fog Treated Dual Lens",
+                "Triple Layer Face Foam with Hypoallergenic Micro Fleece Lining",
+                "Large Fit"
+            ],
+            "styles": [
+                {
+                    "id": 1,
+                    "color": "HUNTER / DARK SMOKE + YELLOW BLUE ION + ROSE",
+                    "imageUrl": "http://dragon.com.s3.amazonaws.com/sn/1000/Fall%202015%20Snow/x2_hunter_dark_smoke.jpg",
+                    "price": "$269.99"
+                },
+                {
+                    "id": 2,
+                    "color": "KNIGHT RIDER / DARK SMOKE + YELLOW BLUE ION + ROSE",
+                    "imageUrl": "http://dragon.com.s3.amazonaws.com/sn/1000/Fall%202014%20Snow/x2_kinght_rider_dark_spoke.jpg",
+                    "price": "$269.99"
+                },
+                {
+                    "id": 3,
+                    "color": "KNIGHT RIDER / DARK SMOKE + YELLOW BLUE ION + ROSE",
+                    "imageUrl": "http://dragon.com.s3.amazonaws.com/sn/1000/Fall%202014%20Snow/x2_kinght_rider_dark_spoke.jpg",
+                    "price": "$269.99"
+                },
+                {
+                    "id": 4,
+                    "color": "MASON BLUE / FLASH BLUE POLARIZED",
+                    "imageUrl": "http://dragon.com.s3.amazonaws.com/sn/1000/Fall%202016%20Snow/x2s_mason_blue_flash_blue_polar.jpg",
+                    "price": "$269.99"
+                },
+                {
+                    "id": 5,
+                    "color": "BRYAN IGUCHI / BLUE STEEL + YELLOW RED ION",
+                    "imageUrl": "http://dragon.com.s3.amazonaws.com/sn/1000/Fall%202016%20Snow/x2_bryan_iguchi_signature_blue_ion.jpg",
+                    "price": "$219.99"
+                }
+            ]
+        }
+    ]
+}

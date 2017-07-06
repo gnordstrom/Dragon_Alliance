@@ -9,7 +9,7 @@ class StoreLocator extends Component {
         return (
             <div>
                 <div className="header-wrapper"> 
-                    <img src={header}/>
+                    <img src={header} alt="Dragon"/>
                 </div>
                 Store Locator Component!
             </div>
