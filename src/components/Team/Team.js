@@ -19,31 +19,43 @@ class Team extends Component {
         }
     }
     componentDidMount() {
-        axios.get(`http://localhost:3030/api/getSurfTeam`)
+        axios.get(`http://localhost:3001/api/dbSurfers`)
         .then(response => {
+            console.log("The response data",response.data);
             this.setState({
-                surfTeam: response.data.surfTeam
+                surfTeam: response.data
             })
-            console.log(this.state.surfTeam)
+            console.log("After request",this.state.surfTeam)
         })
     }
     render() {
         const surfTeam = this.state.surfTeam.map( member => {
+            let images = member.images.map( image => {
+                return (
+                    <li>
+                        <img src={image} />
+                    </li>
+                )
+            })
             return (
                 <div>
-                    <h2>Name: </h2> <span> {member.name}</span>
+                    <h2>Name: </h2> <span> {member.firstname}</span>
                     <h2>Description: </h2> <span> {member.description}</span>
+                    <ul>
+                        { images }
+                    </ul>
+
                 </div>
             )
         })
         return (
             <div>
                 <img src={team} alt="Dragon's Team"/>
-                {/*Team Component*/}
-                {/*{(this.state.surfTeam[0]) ?this.state.surfTeam[0].name : null}*/}
+  
+                { surfTeam }
 
-                {/*{ surfTeam }*/}
-                Team Component
+                
+                Team Component below
 
                 <TeamNav />
                 
