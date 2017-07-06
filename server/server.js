@@ -2,50 +2,34 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const massive = require('massive');
-
-const app = express();
 const config = require('./config.js');
+const controller = require('./controller.js');
 const port = config.port;
+const connectionString = config.herokuConnect;
 
+// Express
+const app = module.exports = express();
+
+
+// Middleware
+app.use(bodyParser.json());
 let corsOptions = {
     origin: `http://localhost:${port}`
 }
-app.use(bodyParser.json());
 app.use(cors(corsOptions));
 
+// Massive Database
+massive(connectionString).then( dbInstance => {
+    app.set('db', dbInstance);
+    // set schema file on server initiation
+    dbInstance.set_schema()
+        .then( () => console.log('Tables successfully reset'))
+        .catch( () => console.log('Try again'))
+})    
 
-// DB
-let db = massive.connectSync({
-  connectionString: config.herokuConnect
-})
-
-app.set('db', db);
-
-db.set_schema( (err, data) => {
-    if (err) console.log(err);
-    else console.log('All tables successfully reset!');
-});
-    
+// Endpoints
+app.get('/api/dbSurfers', controller.getSurfers)
 
 
-const sunglasses = require('./dummy_data/sunglasses.json');
-const surfTeam = require('./dummy_data/surf-team.json');
-
-
-
-app.get('/api/getSunglasses', (req, res, next) => {
-    res.status(200).send(sunglasses)
-});
-
-
-app.get('/api/dbSurfers', (req, res, next) => {
-    db.getSurfers( (err, surfers) => {
-        console.log(surfers);
-        res.status(200).send(surfers);
-    })
-})
-// app.get('/api/getSurfTeam', (req, res, next) => {
-//     res.status(200).send(surfTeam)
-// })
 
 app.listen(port, () => console.log(`Server is now live on port ${port}`));
