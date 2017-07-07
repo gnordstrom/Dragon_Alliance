@@ -104,17 +104,6 @@ VALUES (
         http://s3.amazonaws.com/dragon.com/kitgui/ddb3cff780fb457b92e4de035aad43e7/files/Alejo1.jpg
     }'
 );
-INSERT INTO surfers (firstname, thumbnailUrl, description, level, images) 
-VALUES (
-    'Alejo Muniz',
-    'http://s3.amazonaws.com/dragon.com/kitgui/ddb3cff780fb457b92e4de035aad43e7/files/alejo_head.jpg',
-    'The Brazilian surfer, who was originally born in Argentina, is a major contender and a favorite in his home country. While he was off the championship tour in 2015, he’s come back stronger than ever, with a popular trainer and sports psychologist that is pushing him to another level. He took out title contenders Kelly Slater and Mick Fanning the year Gabe Medina won the first title for Brazil, and is always one to watch out for.',
-    'Global',
-    '{
-        http://s3.amazonaws.com/dragon.com/kitgui/ddb3cff780fb457b92e4de035aad43e7/files/Alejo2.jpg,
-        http://s3.amazonaws.com/dragon.com/kitgui/ddb3cff780fb457b92e4de035aad43e7/files/Alejo1.jpg
-    }'
-);
 
 INSERT INTO surfers (firstname, thumbnailUrl, description, level, images) 
 VALUES (

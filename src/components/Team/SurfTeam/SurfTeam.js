@@ -13,9 +13,11 @@ class SurfTeam extends Component {
             surfTeam: [],
             global: true,
             professional: false,
+            dataLoaded: false
         }
 
         this.handleFilterClick = this.handleFilterClick.bind(this);
+        this.determineView = this.determineView.bind(this);
     }
 
      handleFilterClick(){
@@ -30,31 +32,69 @@ class SurfTeam extends Component {
         .then(response => {
             console.log(response.data);
             this.setState({
-                surfTeam: response.data
+                surfTeam: response.data,
+                dataLoaded: !this.state.dataLoaded
             })
         })
     }
 
+    determineView() {
+        const globalList = this.state.surfTeam.filter( surfer => surfer.level === 'Global');
+        const professionalList = this.state.surfTeam.filter( surfer => surfer.level === 'Professional');
+        
+        if (this.state.dataLoaded) {
+            if (this.state.global) {
+                let globalSurfers = globalList.map( (surfer, i) => {
+                    return (
+                        <a className="team-card" key={i} href="#">
+                            <span className="team-card-img">
+                                <img src={surfer.thumbnailurl}></img>
+                            </span>
+                            <span className="team-card-title">{surfer.firstname}</span>
+                            <span>KEY: {i}</span>
+                        </a>
+                    )
+                })
+                return globalSurfers
+            } else {
+                let proSurfers = professionalList.map( (surfer, i) => {
+                    return (
+                        <a className="team-card" key={i} href="#">
+                            <span className="team-card-img">
+                                <img src={surfer.thumbnailurl}></img>
+                            </span>
+                            <span className="team-card-title">{surfer.firstname}</span>
+                            <span>KEY: {i}</span>
+                        </a>
+                    )
+                })
+                return proSurfers;
+            }
+        } else {
+            return ( <p>Loading...</p>)
+        }
+    }
+
+    // OAuth - The tech for authorization
+    // Auto0 - A company
+
     render() {
-        const surfList = this.state.surfTeam.map( (surfer, i) => {
-            return (
-                <a className="team-card" key={i} href="#">
-                    <span className="team-card-img">
-                        <img src={surfer.thumbnailurl}></img>
-                    </span>
-                    <span className="team-card-title">{surfer.firstname}</span>
-                    <span>KEY: {i}</span>
-                </a>
-            )
-        })
+        const {
+            global,
+            professional,
+            dataLoaded,
+            surfTeam
+        } = this.state;
+
         return (
             <div className="team-container"> 
                 <FilterComponent 
-                    global={this.state.global}
-                    professional={this.state.professional}
+                    global={global}
+                    professional={professional}
                     handleFilterClick={this.handleFilterClick}
                 />
-                {surfList}
+
+                {this.determineView()}
 
             </div>
         );
