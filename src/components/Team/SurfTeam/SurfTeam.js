@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import FilterComponent from '../Shared/FilterComponent';
+
 import './SurfTeam.css';
 
 class SurfTeam extends Component {
@@ -8,18 +10,27 @@ class SurfTeam extends Component {
         super(props);
 
         this.state = {
-            surfTeam: []
+            surfTeam: [],
+            global: true,
+            professional: false,
         }
+
+        this.handleFilterClick = this.handleFilterClick.bind(this);
+    }
+
+     handleFilterClick(){
+        this.setState({
+            global: !this.state.global,
+            professional: !this.state.professional
+        })
     }
 
     componentDidMount() {
         axios.get(`http://localhost:3001/api/dbSurfers`)
         .then(response => {
-            console.log("The response data",response.data);
             this.setState({
                 surfTeam: response.data
             })
-            console.log("After request",this.state.surfTeam)
         })
     }
 
@@ -36,7 +47,13 @@ class SurfTeam extends Component {
         })
         return (
             <div className="team-container"> 
+                <FilterComponent 
+                    global={this.state.global}
+                    professional={this.state.professional}
+                    handleFilterClick={this.handleFilterClick}
+                />
                 {surfList}
+
             </div>
         );
     }

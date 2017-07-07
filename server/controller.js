@@ -4,7 +4,7 @@ module.exports = {
 
         dbInstance.getSurfers()
             .then( (surfers) => {
-                console.log(surfers)
+                // console.log(surfers)
                 res.status(200).send(surfers)
             })
             .catch( () => res.status(500).send())

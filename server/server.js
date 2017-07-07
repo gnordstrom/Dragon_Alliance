@@ -14,7 +14,7 @@ const app = module.exports = express();
 // Middleware
 app.use(bodyParser.json());
 let corsOptions = {
-    origin: `http://localhost:${port}`
+    origin: `http://localhost:3000`
 }
 app.use(cors(corsOptions));
 
@@ -24,7 +24,7 @@ massive(connectionString).then( dbInstance => {
     // set schema file on server initiation
     dbInstance.set_schema()
         .then( () => console.log('Tables successfully reset'))
-        .catch( () => console.log('Try again'))
+        .catch( (err) => console.log('Try again', err))
 })    
 
 // Endpoints
