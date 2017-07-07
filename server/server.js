@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const massive = require('massive');
 const config = require('./config.js');
-const controller = require('./controller.js');
 const port = config.port;
 const connectionString = config.herokuConnect;
 
@@ -27,6 +26,7 @@ massive(connectionString).then( dbInstance => {
         .catch( (err) => console.log('Try again', err))
 })    
 
+const controller = require('./controller.js');
 // Endpoints
 app.get('/api/dbSurfers', controller.getSurfers)
 

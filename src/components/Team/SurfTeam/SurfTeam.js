@@ -28,6 +28,7 @@ class SurfTeam extends Component {
     componentDidMount() {
         axios.get(`http://localhost:3001/api/dbSurfers`)
         .then(response => {
+            console.log(response.data);
             this.setState({
                 surfTeam: response.data
             })
@@ -42,6 +43,7 @@ class SurfTeam extends Component {
                         <img src={surfer.thumbnailurl}></img>
                     </span>
                     <span className="team-card-title">{surfer.firstname}</span>
+                    <span>KEY: {i}</span>
                 </a>
             )
         })
