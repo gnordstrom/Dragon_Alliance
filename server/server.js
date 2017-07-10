@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const massive = require('massive');
 const config = require('./config.js');
-const controller = require('./controller.js');
 const port = config.port;
 const connectionString = config.herokuConnect;
 
@@ -14,7 +13,7 @@ const app = module.exports = express();
 // Middleware
 app.use(bodyParser.json());
 let corsOptions = {
-    origin: `http://localhost:${port}`
+    origin: `http://localhost:3000`
 }
 app.use(cors(corsOptions));
 
@@ -24,9 +23,10 @@ massive(connectionString).then( dbInstance => {
     // set schema file on server initiation
     dbInstance.set_schema()
         .then( () => console.log('Tables successfully reset'))
-        .catch( () => console.log('Try again'))
+        .catch( (err) => console.log('Try again', err))
 })    
 
+const controller = require('./controller.js');
 // Endpoints
 app.get('/api/dbSurfers', controller.getSurfers)
 
