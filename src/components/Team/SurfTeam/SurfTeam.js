@@ -28,7 +28,7 @@ class SurfTeam extends Component {
     }
 
     componentDidMount() {
-        axios.get(`http://localhost:3001/api/dbSurfers`)
+        axios.get(`/api/dbSurfers`)
         .then(response => {
             console.log(response.data);
             this.setState({

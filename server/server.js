@@ -32,4 +32,10 @@ app.get('/api/dbSurfers', controller.getSurfers)
 
 
 
+// Auth
+app.get('/auth/me', (req, res, next) => {
+    if (!req.user) res.status(400).send('Nobody is logged in!')
+    else res.status(500).send(req.user)
+})
+
 app.listen(port, () => console.log(`Server is now live on port ${port}`));
