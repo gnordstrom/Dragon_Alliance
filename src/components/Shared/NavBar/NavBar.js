@@ -61,8 +61,10 @@ class NavBar extends Component {
                     </div>
                     <div className="bottom-right">
                         <div className="bottom-input">
-                            <input className="input-box"type="text" placeholder="Enter your email address"/>
-                            <button className="input-button">JOIN DRAGON</button>
+                            {/* <input className="input-box"type="text" placeholder="Enter your email address"/> */}
+                            <Link to="/login">
+                                <button className="input-button">Login</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

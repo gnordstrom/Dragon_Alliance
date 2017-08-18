@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import NavBar from './components/Shared/NavBar/NavBar';
 import XPNavigation from './components/Shared/XPNavigation/XPNavigation';
+import Login from './components/Login/Login';
 
 import Footer from './components/Shared/Footer/Footer';
 import Home from './components/Home/Home';
@@ -27,6 +28,14 @@ export default (
             <div className="route-wrapper">
                 <NavBar />
                 <Home/> 
+                <Footer />
+            </div>
+        )} />
+
+        <Route path="/login" exact render={() => (
+            <div className="route-wrapper">
+                <NavBar />
+                <Login/> 
                 <Footer />
             </div>
         )} />
